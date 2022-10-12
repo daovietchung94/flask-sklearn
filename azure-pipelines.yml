@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '99ca60c5-9e73-4c4f-992c-c5e3a773e2c7'
+  azureServiceConnectionId: '1eac44bb-7a93-45e3-8c1e-c6ed191ae4b1'
 
   # Web app name
   webAppName: 'flask-sklearn-chungdv'
