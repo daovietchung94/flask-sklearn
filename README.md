@@ -168,6 +168,28 @@ I update home page title from <code>Sklearn Prediction Home</code> to <code>Skle
 
 ![SKLearn](/images/sklearn-updated.png)
 
+### Load Testing with Locust
+Install Locust with command:
+```bash
+pip install locust
+```
+Validate your installation:
+```bash
+locust -V
+```
+Then you can run load testing with simple command:
+```bash
+locust
+```
+Open web browser with default port 8089
+
+![Locust](/images/locust-start.png)
+
+Fill number of users, spawn rate and host(your application url) then click <code>Start swarnming</code>.
+
+![Locust Result](/images/locust.png)
+
+
 ## Enhancements
 
 * Create a friendly UI
