@@ -1,19 +1,55 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+In this project you will use Github Actions and Azure Pipelines to configure CI/CD. From there, the system will automatically lint, test and deploy the code to Azure App Service.
 
-## Project Plan
-<TODO: Project Plan
+# Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* Trello board: 
+* Project plan:
 
-## Instructions
+# Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+## Architectural Diagram
+* Azure Cloud Shell\
+![Azure Cloud Shell](/images/azure-cloud-shell.png)
+* CI Diagram\
+![CI Diagram](/images/ci-diagram.png)
+* CD Diagram\
+![CD Diagram](/images/cd-diagram.png)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+## Setup Azure Cloud Shell
+### SSH key
+Open the Azure Cloud Shell and use the commands below to create SSH key and get its public key:
+```bash
+    ssh-keygen -t rsa
+    cat ~/.ssh/id_rsa.pub
+```
+![SSH key](/images/ssh-key.png)
+
+Copy public key and paste into GitHub
+
+![SSH GitHub](/images/add-ssh-to-github.png)
+
+Clone project into Azure Cloud Shell
+
+![Clone project](/images/clone-project.png)
+
+### Create the Python Virtual Environment
+Remember that by creating a virtual environment in the home directory, it will not be accidentally checked out in your project.
+```bash
+python3 -m venv ~/.azure-devops
+source ~/.azure-devops/bin/activate
+```
+![Python virtual environment](/images/virtual-env.png)
+
+### Install, lint and test code
+Execute the command below to install dependencies, lint and test code
+```bash
+make all
+```
+![Make all](/images/make-all.png)
+
+
 
 * Project running on Azure App Service
 
