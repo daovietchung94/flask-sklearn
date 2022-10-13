@@ -4,6 +4,11 @@ In this project you will use Github Actions and Azure Pipelines to configure CI/
 
 Becasuse the machine learning application only runs on Python 3.7 and below, Azure Cloud Shell has Python 3.9 installed so you can not test this application. Therefore, I will demo the installation, lint and test code with <a href="https://github.com/daovietchung94/azure-devops" title="Hello application">hello application</a>. After that you will continue to configure CD using Azure Pipelines with the machine application.
 
+[![CI](https://github.com/daovietchung94/flask-sklearn/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/daovietchung94/flask-sklearn/actions/workflows/python-app.yml)
+
+[![Build Status](https://dev.azure.com/daovietchung0266/Flask-ML-deploy/_apis/build/status/daovietchung94.flask-sklearn?branchName=master)](https://dev.azure.com/daovietchung0266/Flask-ML-deploy/_build/latest?definitionId=4&branchName=master)
+
+
 # Project Plan
 
 * Trello board: https://trello.com/b/5tR95Mz3/udacity-demo
